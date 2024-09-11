@@ -11,6 +11,14 @@ dotenv.config();
 
 const app = express();
 
+ app.get("/", (req, res) => {
+   res.send("Express JS on Vercel");
+ });
+
+ app.get("/testGet", (req, res) => {
+   res.json({ message: "hello" });
+ });
+
 app.use(bodyParser.json());
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 app.use(cors());
