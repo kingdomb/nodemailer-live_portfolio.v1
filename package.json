@@ -29,6 +29,7 @@
     "jest": "^29.7.0",
     "jest-html-reporter": "^3.10.2",
     "jest-junit": "^16.0.0",
-    "supertest": "^6.3.4"
+    "supertest": "^6.3.4",
+    "vercel": "^37.4.2"
   }
 }
